@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+
+
+.main{
+    background-image: url(assets/Images/Background_image.jpg);
+    height: 105vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1700px, 100vw);
+}
+
+.main .box{
+    width: 100%;
+    height: 105vh;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    max-width: 77vw;
+    margin: auto;
+    justify-content:space-between;
+    align-items: center;
+    /* padding-left: 30px; */
+    padding-top: 15px;
+    /* box-sizing: border-box; */
+    height: 60px;
+}
+
+nav img{
+    color: red;
+    width: 145px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button{
+    position: relative;
+    z-index: 1;
+    border: none;
+    padding: 5px 17px 8px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.nav{
+    max-width: 100vw;
+    width: 97vw;
+    height: 60px;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    opacity: 0.1;
+}
+
+.hero{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    list-style: none;
+    flex-direction: column;
+    gap: 23px;
+    padding: 30px;
+}
+
+.hero> :first-child{
+    z-index: 1;
+    font-family: "Martel Sans", serif;
+    font-size: 56px;
+    font-weight: bolder;
+    max-width: 580px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.hero> :nth-child(2){
+    z-index: 1;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.hero> :nth-child(3){
+    z-index: 1;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.separation{
+    height: 6px;
+    background-color: rgb(212, 1, 1);
+    position: relative;
+}
+
+.MButton{
+    position: relative;
+    z-index: 1;
+    border: none;
+    padding: 12px 23px 14px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+.Mbutton:hover{
+    background-color: rgb(202, 1, 1);
+    cursor: pointer;
+}
+
+
+.RA{
+    width: 18px;
+    padding-left: 13px;
+}
+
+
+.MInput{
+    position: relative;
+    z-index: 1;
+    padding: 13px 15px 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(232, 232, 232, 0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    width: 420px;
+    color: white;
+}
+
+
+input::placeholder{
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 8px;
+}
+
+section{
+    width: 98.7vw;
+    background-color: black;
+}
+
+section .trending{
+    color: white;
+    max-width: 77vw;
+    margin: auto;
+    padding: 60px 0px 5px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+section .trending-posters{
+    max-width: 77vw;
+    margin: auto;
+    display: flex;
+    column-gap: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    flex-wrap: wrap;
+}
+
+.one img{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 175px;
+}
+.two img{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 175px;
+}
+.three img{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 175px;
+}
+.four img{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 175px;
+}
+.five img{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 175px;
+}
+
+div .number{
+    font-size: 80px;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    z-index: 2;
+    top: 134px;
+    left: -20px;
+    text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
+    cursor: pointer;
+}
+
+.trending-posters div{
+    position: relative;
+}
+
+.trending-posters div{
+    transition: transform 0.25s ease-in-out;
+}
+
+.trending-posters div:hover{
+    transform: scale(1.06);
+}
+
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 77vw;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.box{
+    background: linear-gradient(to bottom, #1A2042, #1F1220);
+    width: 23%;
+    height: 317px;
+    border-radius: 15px;
+}
+
+.box h2{
+    color: white;
+    padding: 20px 15px 5px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.box p{
+    color: rgb(188, 188, 188);
+    padding: 10px 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.FAQ-box{
+    display: flex;
+    max-width: 77vw;
+    margin: auto;
+    justify-content: space-between;
+    background-color: #303030;
+    height: 82px;
+    margin-top: 10px;
+    padding: 23px 20px;
+    box-sizing: border-box;
+}
+
+.FAQ-box img{
+    width: 25px;
+    color: white;
+}
+
+.FAQ-box p{
+    color: rgb(243, 243, 243);
+    font-size: 23px;
+}
+
+.FAQ-box{
+    transition: all 0.25s ease-in-out;
+}
+
+.FAQ-box:hover{
+    background-color: #414141;
+    cursor: pointer;
+}
+
+.lower-bar{
+    display: flex;
+    flex-direction: column;
+    max-width: 77vw;
+    margin: auto;
+    margin-top: 65px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-bar>div{
+    color: rgb(239, 239, 239);
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.text1{
+    width: 565px;
+}
+
+footer{
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.Flex{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Grid{
+    display: grid;
+    max-width: 77vw;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Flex a{
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Question a{
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.Question{
+    max-width: 77vw;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+
+.Language-Flex{
+    display: flex;
+    border: 1px solid rgba(198, 198, 198, 0.4);
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 140px;
+    height: 35px;
+    position: relative;
+}
+
+.language img{
+    width: 14px;
+    padding: 8px 7px;
+    position: relative;
+    z-index: 2;
+}
+
+select{
+    background-color: rgba(32, 32, 32, 0.5); /* Background of select box */
+    color: white;
+    padding: 6px 25px 6px 40px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.last-line{
+    color: rgb(168, 168, 168);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 35px 0px;
+    width: 77vw;
+    margin: auto;
+}
